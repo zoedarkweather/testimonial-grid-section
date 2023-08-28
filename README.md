@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/zoedarkweather/testimonial-grid-section](https://github.com/zoedarkweather/testimonial-grid-section)
+- Live Site URL: [https://testimonial-grid-section-eight-coral.vercel.app/](https://testimonial-grid-section-eight-coral.vercel.app/)
 
 ## My process
 

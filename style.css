@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+:root {
+    --font-family: "Barlow Semi Condensed", Arial, Helvetica, sans-serif;
+    --font-wt-normal: 500;
+    --font-wt-bold: 600;
+
+    --card-padding: 2.5rem;
+
+    /* ### Primary */
+    --card-bg-bright: hsl(263, 55%, 52%);
+    --card-bg-dark: hsl(217, 19%, 35%);
+    --card-bg-very-dark: hsl(219, 29%, 14%);
+    --card-bg-light: hsl(0, 0%, 100%);
+
+    --card-heading-dark:  hsl(219, 29%, 14%);
+    --card-heading-light: hsl(0, 0%, 100%);
+
+    --verified-grad-light: hsla(0, 0%, 100%, 0.5);
+    --card-quote-light: hsla(0, 0%, 100%, 0.7);
+    --verified-grad-dark: hsla(219, 29%, 14%, 0.5);
+    --card-quote-dark:  hsl(219, 29%, 14%, 0.7);
+
+    /* ### Neutral */
+    --shadow: hsl(0, 0%, 81%);
+    --body-bg: hsl(210, 46%, 95%);
+}
+
+body {
+    font-family: var(--font-family);
+    font-weight: var(--font-wt-normal);
+    font-size: 13px;
+    background-color: var(--body-bg);
+}
+
+p {
+    font-size: 0.9rem;    
+}
+
+.grid-container {
+    max-width: 90vw;
+    margin: 3rem auto;
+    display: grid;    
+    gap: 2rem;
+    border-radius: 10px;    
+}
+
+.card {
+    display: grid;
+    align-content: start;
+    gap: 1.3rem;
+    padding: var(--card-padding);
+    border-radius: 10px;
+    color: var(--card-heading-light);
+    box-shadow: 10px 10px 10px var(--shadow);
+}
+
+.heading-container {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1.5rem;
+}
+
+.testimonial-headshot {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+.verified-grad {
+    color: var(--verified-grad-light);
+}
+
+.light .verified-grad {
+    color: var(--verified-grad-dark);
+}
+
+.highlighted {
+    font-size: 1.3rem;
+    font-weight: var(--font-wt-bold);
+}
+
+.card q {
+    color: var(--card-quote-light);
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+.light q {
+    color: var(--card-quote-dark);
+}
+
+.bright {
+    background-color: var(--card-bg-bright);   
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-position: top right var(--card-padding);
+    background-repeat: no-repeat;     
+    background-size: 9rem;
+}
+
+.dark {
+    background-color: var(--card-bg-dark);   
+}
+
+.very-dark {
+    background-color: var(--card-bg-very-dark);
+}
+
+.light {
+    background-color: var(--card-bg-light);
+    color: var(--card-heading-dark);
+      
+}
+
+.attribution {
+    font-size: 11px; text-align: center;
+    margin-bottom: 1rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width:1000px) {
+
+    .grid-container {       
+        margin: 10rem auto;       
+        grid-template-columns: repeat(4, 1fr);   
+    }
+
+    .grid-pos-1 {
+        grid-row: 1 ;
+        grid-column: 1 / span 2;
+    }
+
+    .grid-pos-2 {
+        grid-row: 1;
+        grid-column: 3;
+    }
+
+    .grid-pos-4 {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .grid-pos-5 {
+        grid-row: 2;
+        grid-column: 2 / span 2;
+    }
+
+    .grid-pos-3 {
+        grid-row: 1 / span 2;
+        grid-column: 4;
+    }
+
+    .bright {
+        background-position: top right 5.5rem;
+    }
+
+    .highlighted {
+        font-size: 1.7rem;
+    }
+}
+

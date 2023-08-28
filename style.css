@@ -15,7 +15,7 @@ img {
     --font-wt-normal: 500;
     --font-wt-bold: 600;
 
-    --card-padding: 2.5rem;
+    --card-padding: 2rem;
 
     /* ### Primary */
     --card-bg-bright: hsl(263, 55%, 52%);
@@ -68,7 +68,7 @@ p {
 .heading-container {
     display: flex;
     flex-flow: row nowrap;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .testimonial-headshot {
@@ -92,7 +92,7 @@ p {
 
 .card q {
     color: var(--card-quote-light);
-    line-height: 1.5rem;
+    line-height: 1.3rem;
     font-size: 1rem;
 }
 
@@ -133,7 +133,8 @@ p {
 
 @media (min-width:1000px) {
 
-    .grid-container {       
+    .grid-container {  
+        max-width: 1200px;     
         margin: 10rem auto;       
         grid-template-columns: repeat(4, 1fr);   
     }
@@ -167,8 +168,5 @@ p {
         background-position: top right 5.5rem;
     }
 
-    .highlighted {
-        font-size: 1.7rem;
-    }
 }
 

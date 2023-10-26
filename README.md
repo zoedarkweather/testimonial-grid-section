@@ -1,6 +1,6 @@
 # Frontend Mentor - Testimonials grid section solution
 
-This is a solution to the [Testimonials grid section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Testimonials grid section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -55,7 +55,6 @@ Continue practicing all the css.
 - [MDN - Background Position](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position) - This helped me remember the syntax for background position.
 
 - [Kevin Powell's YouTube channel](https://www.youtube.com/@KevinPowell) - These videos help with just everything when learning CSS.
-
 
 ## Author
 

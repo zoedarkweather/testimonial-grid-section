@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -15,9 +13,8 @@ img {
     --font-wt-normal: 500;
     --font-wt-bold: 600;
 
-    --card-padding: 2rem;
+    --card-padding: 3em;
 
-    /* ### Primary */
     --card-bg-bright: hsl(263, 55%, 52%);
     --card-bg-dark: hsl(217, 19%, 35%);
     --card-bg-very-dark: hsl(219, 29%, 14%);
@@ -30,37 +27,48 @@ img {
     --card-quote-light: hsla(0, 0%, 100%, 0.7);
     --verified-grad-dark: hsla(219, 29%, 14%, 0.5);
     --card-quote-dark:  hsl(219, 29%, 14%, 0.7);
-
-    /* ### Neutral */
+   
     --shadow: hsl(0, 0%, 81%);
     --body-bg: hsl(210, 46%, 95%);
 }
 
 body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: var(--font-family);
     font-weight: var(--font-wt-normal);
-    font-size: 13px;
+    font-size: 0.8125rem;
     background-color: var(--body-bg);
 }
 
 p {
-    font-size: 0.9rem;    
+    font-size: 1rem;    
+}
+
+.screenreader-only {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.wrapper {
+    margin-block: 2em;
 }
 
 .grid-container {
     max-width: 90vw;
-    margin: 3rem auto;
     display: grid;    
-    gap: 2rem;
-    border-radius: 10px;    
+    gap: 2em; 
 }
 
 .card {
     display: grid;
     align-content: start;
-    gap: 1.3rem;
+    gap: 1.3em;
     padding: var(--card-padding);
-    border-radius: 10px;
+    border-radius: 0.8em;
     color: var(--card-heading-light);
     box-shadow: 10px 10px 10px var(--shadow);
 }
@@ -68,12 +76,12 @@ p {
 .heading-container {
     display: flex;
     flex-flow: row nowrap;
-    gap: 1rem;
+    gap: 1em;
 }
 
 .testimonial-headshot {
-    width: 60px;
-    height: 60px;
+    width: 3.5em;
+    height: 3.5em;
     border-radius: 100%;
 }
 
@@ -86,13 +94,13 @@ p {
 }
 
 .highlighted {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: var(--font-wt-bold);
 }
 
 .card q {
     color: var(--card-quote-light);
-    line-height: 1.3rem;
+    line-height: 1.3;
     font-size: 1rem;
 }
 
@@ -102,10 +110,10 @@ p {
 
 .bright {
     background-color: var(--card-bg-bright);   
-    background-image: url(images/bg-pattern-quotation.svg);
+    background-image: url("images/bg-pattern-quotation.svg");
     background-position: top right var(--card-padding);
     background-repeat: no-repeat;     
-    background-size: 9rem;
+    background-size: 10em;
 }
 
 .dark {
@@ -123,19 +131,19 @@ p {
 }
 
 .attribution {
-    font-size: 11px; text-align: center;
-    margin-bottom: 1rem;
+    font-size: 0.7rem; 
+    text-align: center;
+    margin-top: 1em;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: var(--card-bg-bright);
 }
 
 @media (min-width:1000px) {
 
     .grid-container {  
-        max-width: 1200px;     
-        margin: 10rem auto;       
+        max-width: 100em;     
         grid-template-columns: repeat(4, 1fr);   
     }
 
@@ -165,7 +173,7 @@ p {
     }
 
     .bright {
-        background-position: top right 5.5rem;
+        background-position: top right 5.5em;
     }
 
 }
